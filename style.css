@@ -318,7 +318,8 @@ body {
     margin: 5% auto;
     padding: 12px;
     border: 1px solid #272b4d;
-    width: 20vw;
+    width: 45%;
+    /* Adjusted width to 45% of the screen */
     border-radius: 10px;
 }
 
@@ -497,7 +498,6 @@ footer {
     border-top: 1px solid #272b4d;
 }
 
-/* Add space between container and .write_box textarea */
 .container {
     padding: 20px;
     margin: 10px auto;
