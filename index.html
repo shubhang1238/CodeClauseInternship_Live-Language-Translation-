@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>Translate Hub: Language Translator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 class="project-title">Translate Hub: Language Translator</h1>
+    </div>
+    <div class="translator_property">
+      <ul class="nuv_item center">
+        <li>
+          <select id="fromLanguage"></select>
+        </li>
+        <li class="bx bx-transfer" id="switchLanguages"></li>
+        <li>
+          <select id="toLanguage"></select>
+        </li>
+      </ul>
+      <div class="write_box">
+        <div class="Property_from from">
+          <textarea id="inputText" cols="10" rows="10" class="fromText"
+            placeholder="Enter text to translate"></textarea>
+          <div class="icons">
+            <span class="bx bx-volume-full"> </span>
+          </div>
+        </div>
+        <div class="Property_trans">
+          <textarea class="toTranslate" disabled cols="10" rows="10"></textarea>
+          <div class="icons">
+            <span class="bx bx-volume-full to"> </span>
+            <span class="bx bx-copy" onclick="copyToClipboard()"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-popup" id="contactPopup">
+    <div class="contact-popup-content">
+      <span class="close-popup" onclick="closeContactPopup()">×</span>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="contactName">Name:</label>
+          <input type="text" id="contactName" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="contactPhone">Phone Number:</label>
+          <input type="text" id="contactPhone" placeholder="Your phone number">
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email:</label>
+          <input type="email" id="contactEmail" placeholder="Your email">
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message:</label>
+          <textarea id="contactMessage" cols="30" rows="5" placeholder="Your message"></textarea>
+        </div>
+        <button type="button" class="contact-button" onclick="sendMessage()">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Translate Hub. Made by <a href="mailto:shubhangss2305@gmail.com">Shubhang</a><br>
+
+      For inquiries or
+      collaborations, <a href="javascript:void(0);" onclick="openContactPopup()">Contact us</a>.</p>
+
+  </footer>
+  <script src="https://unpkg.com/boxicons@2.1.4/js/boxicons.min.js"></script>
+  <script src="language.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

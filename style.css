@@ -1,0 +1,520 @@
+body {
+    font-family: Monaco ,monospace,'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #050c1f;
+    /* Very dark royal blue background color */
+    color: #c5c8e6;
+    /* Light text color */
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #0e1132;
+    /* Darker container background color */
+}
+
+.project-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #4c4cff;
+    /* Royal blue title color */
+    transform: translateY(-50px);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.translator_property .nuv_item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #272b4d;
+    /* Dark border color */
+}
+
+.translator_property .nuv_item li select {
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #00065b;
+    /* Darker dropdown background color */
+    color: #c5c8e6;
+    /* Light text color */
+}
+
+.translator_property .nuv_item li select:hover {
+    background-color: #1d2262;
+    position: center;
+    /* Slightly lighter hover color */
+}
+
+.bx-transfer {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+    /* Royal blue icon color */
+    margin-left: auto;
+    position: center;
+    /* Move icon to the right */
+}
+
+.bx-transfer:hover {
+    color: #c5cae9;
+    /* Light hover color */
+}
+
+.write_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Property_from,
+.Property_trans {
+    width: 48%;
+}
+
+.write_box textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #272b4d;
+    /* Dark border color */
+    resize: vertical;
+    background-color: #0e1132;
+    /* Dark textarea background color */
+    color: #c5c8e6;
+    /* Light text color */
+}
+
+.icons .bx {
+    font-size: 24px;
+    cursor: pointer;
+    color: #4c4cff;
+    /* Royal blue icon color */
+}
+
+.icons .bx:last-child {
+    margin-left: 10px;
+    /* Add margin to separate from the textarea */
+}
+
+.code_length {
+    font-size: 14px;
+    color: #9a9ebb;
+    /* Lighter gray color */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0e1132;
+    /* Dark footer background color */
+    border-top: 1px solid #272b4d;
+    /* Dark border color */
+}
+
+.contact-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c4cff;
+    /* Royal blue button color */
+    border: none;
+    color: #c5c8e6;
+    /* Light text color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #1c2055;
+    /* Darker hover color */
+}
+
+.contact-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.contact-popup-content {
+    background-color: #292c53;
+    /* Slightly lighter modal background color */
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #272b4d;
+    /* Dark border color */
+    width: 80%;
+}
+
+.contact-popup-content h2 {
+    margin-bottom: 10px;
+    color: #c5c8e6;
+    /* Light text color */
+}
+
+.close-popup {
+    color: #c5c8e6;
+    /* Light icon color */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* CSS styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #050c1f;
+    /* Very dark royal blue background color */
+    color: #c5c8e6;
+    /* Light text color */
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #0e1132;
+    /* Darker container background color */
+}
+
+.project-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #4c4cff;
+    /* Royal blue title color */
+    transform: translateY(-50px);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.translator_property .nuv_item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #272b4d;
+    /* Dark border color */
+}
+
+.translator_property .nuv_item li select {
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #1c2055;
+    /* Darker dropdown background color */
+    color: #c5c8e6;
+    /* Light text color */
+}
+
+.translator_property .nuv_item li select:hover {
+    background-color: #1d2262;
+    /* Slightly lighter hover color */
+}
+
+.bx-transfer {
+    font-size: 24px;
+    cursor: pointer;
+    color: #4c4cff;
+    /* Royal blue icon color */
+    margin-left: auto;
+    /* Move icon to the right */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+}
+
+.bx-transfer:hover {
+    color: #c5cae9;
+    /* Light hover color */
+}
+
+.contact-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c4cff;
+    border: none;
+    color: #c5c8e6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #1c2055;
+    transform: translateY(-2px);
+}
+
+.contact-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 60px;
+}
+
+.contact-popup-content {
+    background-color: #1a1e56;
+    margin: 5% auto;
+    padding: 12px;
+    border: 1px solid #272b4d;
+    width: 20vw;
+    border-radius: 10px;
+}
+
+.contact-popup-content textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.contact-popup-content h2 {
+    margin-bottom: 10px;
+    color: #e1e1e1;
+    font-size: 24px;
+}
+
+.contact-popup-content p {
+    margin-bottom: 10px;
+    color: #c5c8e6;
+}
+
+.close-popup {
+    color: #c5c8e6;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+
+.close-popup:hover {
+    color: #ffffff;
+}
+
+.contact-popup-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-popup-content .form-group {
+    margin-bottom: 10px;
+}
+
+.contact-popup-content label {
+    color: #c5c8e6;
+    margin-bottom: 5px;
+}
+
+.contact-popup-content input,
+.contact-popup-content textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #272b4d;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #050c1f;
+    color: #c5c8e6;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #0e1132;
+}
+
+.project-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    color: #3f8cff;
+    transform: translateY(-50px);
+    animation: slideIn 0.5s forwards;
+}
+
+
+.contact-popup-content .contact-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4c4cff;
+    border: none;
+    color: #c5c8e6;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-popup-content .contact-button:hover {
+    background-color: #1c2055;
+    transform: translateY(-2px);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    font-size:19px;
+    width: 100%;
+    background-color: #0e1132;
+    border-top: 1px solid #272b4d;
+}
+
+/* Add this CSS code for a dynamic and highlighted effect */
+footer a {
+    position: relative;
+    color: white;
+    /* Royal blue color */
+    text-decoration: none;
+    
+    transition: color 0.3s ease;
+}
+.translator_property .nuv_item {
+  display: flex;
+  width: 100%;
+  justify-content: center; /* Center-align the content */
+  align-items: center;
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #272b4d;
+}
+
+.translator_property .nuv_item li {
+  margin: 0 10px; /* Add margin to the list items */
+}
+
+.bx-transfer {
+  font-size: 24px;
+  cursor: pointer;
+  color: #4c4cff;
+}
+footer a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #fdfdfd;
+    /* Royal blue color */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+footer a:hover {
+    color: #f3ff08;
+    /* Darker hover color */
+}
+
+footer a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+/* Adjust the height of the footer */
+footer {
+    text-align: center;
+    padding: 12px;
+    /* Adjust the padding to reduce the height */
+    position: fixed;
+    bottom: 0;
+    height:10vh;
+    line-gap-override: 40px;
+    width: 100%;
+    background-color: #0e1132;
+    border-top: 1px solid #272b4d;
+}
+
+/* Add space between container and .write_box textarea */
+.container {
+    padding: 20px;
+    margin: 10px auto;
+    /* Adjust the margin to add space */
+    max-width: 800px;
+    background-color: #0e1132;
+}
+
+.write_box textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #272b4d;
+    resize: vertical;
+    background-color: #0e1132;
+    color: #c5c8e6;
+    margin-bottom: 10px;
+    /* Add margin to create space */
+}
